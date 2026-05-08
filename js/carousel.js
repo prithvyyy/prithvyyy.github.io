@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
       `;
       track.appendChild(slide);
 
-      // Pip
+   
       const pip = document.createElement('button');
       pip.className = 'pip' + (i === 0 ? ' active' : '');
       pip.setAttribute('aria-label', `Go to slide ${i + 1}`);
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.pip').forEach((p, i) => {
       p.classList.toggle('active', i === current);
     });
-    // Update counter
+    
     if (counterEl) counterEl.textContent = `${current + 1} / ${slides.length}`;
   }
 
@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.key === 'ArrowRight') { goTo(current + 1); resetAutoplay(); }
   });
 
-  // Touch/swipe support
+  
   let touchStartX = 0;
   track.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
   track.addEventListener('touchend', e => {
@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Autoplay
+  
   function startAutoplay() {
     isPlaying = true;
     autoBtn && (autoBtn.textContent = '⏸ Pause');
