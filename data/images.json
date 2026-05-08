@@ -1,0 +1,123 @@
+{
+  "gallery": [
+    {
+      "id": 1,
+      "src": "images/gallery-1.jpg",
+      "alt": "Sami standing alone on a winter morning",
+      "description": "A quiet winter morning, standing alone as the warm sun gently fell on me — one of those peaceful moments you never forget."
+    },
+    {
+      "id": 2,
+      "src": "images/gallery-2.jpg",
+      "alt": "Sami's cat sitting on his lap",
+      "description": "My cat decided my lap was his favourite place in the world — and honestly, I did not mind one bit."
+    },
+    {
+      "id": 3,
+      "src": "images/gallery-3.jpg",
+      "alt": "Sami's rabbit back in Bangladesh",
+      "description": "My little rabbit back home in Bangladesh — she holds a special place in my heart and I miss her dearly every day."
+    },
+    {
+      "id": 4,
+      "src": "images/gallery-4.jpg",
+      "alt": "Bangor University building",
+      "description": "Bangor University — the place I now call my second home, where every day brings a new challenge and a new opportunity."
+    },
+    {
+      "id": 5,
+      "src": "images/gallery-5.jpg",
+      "alt": "Stunning city view from above with a bird",
+      "description": "The city looked absolutely stunning from up here — and to make it even more special, a bird flew right up to me as if we were old friends."
+    },
+    {
+      "id": 6,
+      "src": "images/gallery-6.jpg",
+      "alt": "Exploring the city",
+      "description": "Went out to explore the city and soak in everything it had to offer — every street had its own story to tell."
+    },
+    {
+      "id": 7,
+      "src": "images/gallery-7.jpg",
+      "alt": "Attending Jummah prayer on Friday",
+      "description": "Attending Jummah prayer on a Friday — a moment of peace, reflection, and gratitude that grounds me no matter where I am in the world."
+    },
+    {
+      "id": 8,
+      "src": "images/gallery-8.jpg",
+      "alt": "July movement protest in Bangladesh",
+      "description": "This was taken during the July Movement in Bangladesh — a time I stood up and raised my voice alongside thousands of others for our rights and our future."
+    },
+    {
+      "id": 9,
+      "src": "images/gallery-9.jpg",
+      "alt": "Night city view",
+      "description": "The city at night is an absolute beauty — the lights, the energy, the vibes. I could stand here and take it all in forever."
+    }
+  ],
+  "carousel": [
+    {
+      "id": 1,
+      "src": "images/gallery-1.jpg",
+      "alt": "Sami standing alone on a winter morning",
+      "title": "Winter Morning",
+      "description": "A quiet winter morning, standing alone as the warm sun gently fell on me — one of those peaceful moments you never forget."
+    },
+    {
+      "id": 2,
+      "src": "images/gallery-2.jpg",
+      "alt": "Sami's cat sitting on his lap",
+      "title": "My Favourite Company",
+      "description": "My cat decided my lap was his favourite place in the world — and honestly, I did not mind one bit."
+    },
+    {
+      "id": 3,
+      "src": "images/gallery-3.jpg",
+      "alt": "Sami's rabbit back in Bangladesh",
+      "title": "Rabbit's Home",
+      "description": "My little rabbit back home in Bangladesh — she holds a special place in my heart and I miss her dearly every day."
+    },
+    {
+      "id": 4,
+      "src": "images/gallery-4.jpg",
+      "alt": "Bangor University building",
+      "title": "Academic Haven",
+      "description": "Bangor University — the place I now call my second home, where every day brings a new challenge and a new opportunity."
+    },
+    {
+      "id": 5,
+      "src": "images/gallery-5.jpg",
+      "alt": "Stunning city view from above with a bird",
+      "title": "A Bird & A View",
+      "description": "The city looked absolutely stunning from up here — and to make it even more special, a bird flew right up to me as if we were old friends."
+    },
+    {
+      "id": 6,
+      "src": "images/gallery-6.jpg",
+      "alt": "Exploring the city",
+      "title": "City Explorer",
+      "description": "Went out to explore the city and soak in everything it had to offer — every street had its own story to tell."
+    },
+    {
+      "id": 7,
+      "src": "images/gallery-7.jpg",
+      "alt": "Attending Jummah prayer on Friday",
+      "title": "Friday Reflections",
+      "description": "Attending Jummah prayer on a Friday — a moment of peace, reflection, and gratitude that grounds me no matter where I am in the world."
+    },
+    {
+      "id": 8,
+      "src": "images/gallery-8.jpg",
+      "alt": "July movement protest in Bangladesh",
+      "title": "July Movement",
+      "description": "This was taken during the July Movement in Bangladesh — a time I stood up and raised my voice alongside thousands of others for our rights and our future."
+    },
+    {
+      "id": 9,
+      "src": "images/gallery-9.jpg",
+      "alt": "Night city view",
+      "title": "Night Vibes",
+      "description": "The city at night is an absolute beauty — the lights, the energy, the vibes. I could stand here and take it all in forever."
+    }
+  ]
+}
