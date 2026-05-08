@@ -1,6 +1,4 @@
-/* ============================================
-   TASK 4 — IMAGE GALLERY FROM JSON
-   ============================================ */
+
 
 document.addEventListener('DOMContentLoaded', () => {
   const galleryContainer = document.getElementById('gallery-grid');
@@ -11,7 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (!galleryContainer) return;
 
-  // Fetch JSON data
   fetch('data/images.json')
     .then(res => {
       if (!res.ok) throw new Error('Could not load image data.');
@@ -44,7 +41,6 @@ document.addEventListener('DOMContentLoaded', () => {
       galleryContainer.appendChild(item);
     });
 
-    // Trigger fade-in observer refresh
     document.querySelectorAll('.fade-in').forEach(el => el.classList.add('visible'));
   }
 
