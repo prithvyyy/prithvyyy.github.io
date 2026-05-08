@@ -1,6 +1,4 @@
-/* ============================================
-   CONTACT FORM VALIDATION
-   ============================================ */
+
 
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('contact-form');
@@ -30,7 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
-    // Simulate a successful submission
     const btn = form.querySelector('[type="submit"]');
     btn.disabled = true;
     btn.textContent = 'Sending…';
