@@ -9,7 +9,6 @@
   <title>Gallery — [Sami Khan Prithvy]</title>
   <link rel="stylesheet" href="css/style.css">
   <style>
-    /* Page-specific styles for gallery page */
     .filter-bar {
       display: flex;
       gap: 0.75rem;
@@ -33,8 +32,6 @@
       border-color: var(--clr-accent);
       color: var(--clr-accent);
     }
-
-    /* Gallery loading skeleton */
     .gallery-skeleton {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -56,7 +53,6 @@
 
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
-  <!-- ======= HEADER ======= -->
   <header>
     <div class="header-inner">
       <a href="index.html" class="logo">[Sami<span> </span>Khan <span> </span>Prithvy]</a>
@@ -80,32 +76,30 @@
     </nav>
   </header>
 
-  <!-- ======= MAIN ======= -->
   <main id="main-content">
 
-    <!-- PAGE BANNER -->
     <div class="page-banner">
       <p class="section-label">Visual Stories</p>
       <h1 class="page-banner-title">My <em style="font-style:italic; color:var(--clr-accent);">Gallery</em></h1>
       <p class="page-banner-sub">
-        <!-- REPLACE with a description of what your gallery contains — what themes, subjects, or stories do your images tell? -->
+        
         A curated collection of photographs and images that capture moments, places, and ideas that inspire me.
       </p>
     </div>
 
-    <!-- ===== TASK 4: 3×3 IMAGE GALLERY ===== -->
+    
     <section class="section" aria-labelledby="gallery-heading">
       <p class="section-label">Task 4 — Image Grid</p>
       <h2 class="section-title" id="gallery-heading">Image <em>Grid</em></h2>
       <div class="divider"></div>
       <p style="color:var(--clr-muted); margin-bottom:2rem; max-width:60ch;">
-        <!-- REPLACE with a description of the gallery theme -->
+        
         Click any image to view it full-size.
       </p>
 
-      <!-- Gallery is built by gallery.js from data/images.json -->
+      
       <div id="gallery-grid" class="gallery-grid" role="list" aria-label="Image gallery">
-        <!-- Loading skeleton -->
+        
         <div class="skeleton-box" aria-hidden="true"></div>
         <div class="skeleton-box" aria-hidden="true"></div>
         <div class="skeleton-box" aria-hidden="true"></div>
@@ -118,7 +112,7 @@
       </div>
     </section>
 
-    <!-- Modal for full-size image view -->
+    
     <div id="modal-overlay" class="modal-overlay" role="dialog" aria-modal="true" aria-label="Full size image">
       <div class="modal-content">
         <button id="modal-close" class="modal-close" aria-label="Close image">✕</button>
@@ -127,13 +121,13 @@
       </div>
     </div>
 
-    <!-- ===== TASK 5: INTERACTIVE CAROUSEL ===== -->
+   
     <section class="section" style="border-top:1px solid var(--clr-border);" aria-labelledby="carousel-heading">
       <p class="section-label">Task 5 — Interactive Carousel</p>
       <h2 class="section-title" id="carousel-heading">Image <em>Carousel</em></h2>
       <div class="divider"></div>
       <p style="color:var(--clr-muted); margin-bottom:2rem; max-width:60ch;">
-        <!-- REPLACE with context about the carousel content -->
+        
         Browse through the same collection in a different way — use the arrows, click the dots, press arrow keys, or swipe on mobile. Use the autoplay toggle to sit back and let it run.
       </p>
 
@@ -146,17 +140,17 @@
           <button id="carousel-next" class="carousel-btn next" aria-label="Next image">&#8594;</button>
         </div>
 
-        <!-- Pips + controls -->
+        
         <div id="carousel-pips" class="carousel-pips" role="tablist" aria-label="Select slide"></div>
         <div class="carousel-controls">
           <span id="carousel-counter" style="font-size:0.8rem; color:var(--clr-muted);">1 / 9</span>
-          <!-- Task 6: Autoplay toggle -->
+         
           <button id="autoplay-btn" class="autoplay-btn" aria-label="Toggle autoplay">▶ Autoplay</button>
         </div>
       </div>
     </section>
 
-    <!-- NOTE ABOUT JSON SOURCE -->
+    
     <section class="section" style="border-top:1px solid var(--clr-border); padding-top:2rem; padding-bottom:3rem;">
       <div style="background:var(--clr-surface); border:1px solid var(--clr-border); border-radius:var(--radius); padding:1.5rem;">
         <p style="color:var(--clr-muted); font-size:0.875rem; line-height:1.6;">
@@ -170,8 +164,6 @@
     </section>
 
   </main>
-
-  <!-- ======= FOOTER ======= -->
   <footer>
     <div class="footer-inner">
       <div class="footer-links">
