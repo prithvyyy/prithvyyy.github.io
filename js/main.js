@@ -1,8 +1,4 @@
-/* ============================================
-   SHARED UTILITIES & NAVIGATION
-   ============================================ */
 
-// ---- Active Nav Link ----
 document.addEventListener('DOMContentLoaded', () => {
   const currentPage = location.pathname.split('/').pop() || 'index.html';
   document.querySelectorAll('nav a, .mobile-nav a').forEach(link => {
@@ -12,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // ---- Hamburger Menu ----
+  
   const hamburger = document.querySelector('.hamburger');
   const mobileNav = document.querySelector('.mobile-nav');
   if (hamburger && mobileNav) {
@@ -23,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
       hamburger.setAttribute('aria-expanded', expanded);
     });
 
-    // Close when a link is clicked
+
     mobileNav.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
         hamburger.classList.remove('open');
@@ -33,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // ---- Skill bar animation on scroll ----
+  
   const skillFills = document.querySelectorAll('.skill-fill');
   if (skillFills.length) {
     const observer = new IntersectionObserver((entries) => {
@@ -48,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
     skillFills.forEach(f => observer.observe(f));
   }
 
-  // ---- Fade-in on scroll ----
+  
   const fadeEls = document.querySelectorAll('.fade-in');
   if (fadeEls.length) {
     const fadeObserver = new IntersectionObserver((entries) => {
