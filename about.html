@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About [Sami Khan] — Background, skills, education, and experience.">
+  <meta name="keywords" content="about, web developer, skills, CV, resume, [Sami Khan Prithvy]">
+  <meta name="author" content="[Sami Khan Prithvy]">
+  <title>About — [Sami Khan Prithvy]</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .fade-in.visible { opacity: 1; transform: none; }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    .about-photo {
+      position: sticky;
+      top: 100px;
+    }
+    .about-photo img {
+      width: 100%;
+      aspect-ratio: 3/4;
+      object-fit: cover;
+      border-radius: 2px;
+      border: 1px solid var(--clr-border);
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 0.3rem 0.75rem;
+      background: var(--clr-surface);
+      border: 1px solid var(--clr-border);
+      border-radius: 99px;
+      font-size: 0.78rem;
+      color: var(--clr-muted);
+      margin: 0.25rem;
+    }
+    .tags-row { margin: 1.5rem 0; }
+
+    .cv-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 800px) {
+      .about-grid { grid-template-columns: 1fr; }
+      .about-photo { position: static; }
+      .about-photo img { max-width: 260px; }
+    }
+  </style>
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ======= HEADER ======= -->
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo">[Sami<span> </span>Khan<span> </span>Prithvy]</a>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="mobile-nav" aria-label="Mobile navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ======= MAIN ======= -->
+  <main id="main-content">
+
+    <!-- PAGE BANNER -->
+    <div class="page-banner" role="banner">
+      <p class="section-label">Get to know me</p>
+      <h1 class="page-banner-title">About <em style="font-style:italic; color:var(--clr-accent);">Me</em></h1>
+      <p class="page-banner-sub">A brief look at who I am, what I do, and what drives my work.</p>
+    </div>
+
+    <!-- ABOUT CONTENT -->
+    <section class="section" aria-labelledby="about-heading">
+      <div class="about-grid">
+
+        <!-- LEFT COLUMN: Photo + quick links -->
+        <aside class="about-photo">
+          <!-- REPLACE src WITH YOUR OWN PHOTO -->
+          <img src="images/samikhan.jpg" alt="Portrait of [Sami Khan Prithvy]">
+          <div style="margin-top:1.5rem; display:flex; flex-direction:column; gap:0.75rem;">
+            <!-- REPLACE with your own links -->
+            <a href="https://github.com/prithvyyy" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="justify-content:center;">GitHub ↗</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="justify-content:center;">LinkedIn ↗</a>
+            <!-- REPLACE href with a link to your actual CV PDF if you have one -->
+            <a href="#" class="btn btn-primary" style="justify-content:center;">Download CV</a>
+          </div>
+        </aside>
+
+        <!-- RIGHT COLUMN: Bio + skills + timeline -->
+        <div>
+          <p class="section-label">My Story</p>
+          <h2 class="section-title" id="about-heading" style="font-size:clamp(1.6rem,3vw,2.4rem);">Who I <em>Am</em></h2>
+          <div class="divider"></div>
+
+          <!-- REPLACE with your own biography — aim for 150-250 words -->
+          <p style="color:var(--clr-muted); margin-bottom:1.25rem;">
+            My name is Sami Khan Prithvy, and I am a first-year BSc Computer Science 
+  and Artificial Intelligence student at Bangor University, Wales, UK. Born 
+  and raised in Dhaka, Bangladesh, I built a strong academic foundation at 
+  Engineering University School and College, where I achieved a GPA of 4.00 
+  and earned distinctions in ICT, Mathematics, and the Sciences. Moving to 
+  the United Kingdom to pursue my degree has been a defining chapter in my 
+  life — one that has pushed me to grow not only as a student, but as an 
+  individual. I bring with me hands-on experience in Python programming, 
+  front-end web development, and Object-Oriented Programming, all of which 
+  I continue to build upon through my studies and personal projects.
+          </p>
+          <p style="color:var(--clr-muted); margin-bottom:1.25rem;">
+            I am deeply passionate about the intersection of technology and 
+  real-world problem solving. Whether it is automating a repetitive 
+  task with Python, designing a clean and accessible web interface, 
+  or exploring how artificial intelligence can reshape industries, I 
+  find genuine excitement in building things that work and matter. 
+  Beyond the screen, I enjoy gaming — which has sharpened my 
+  strategic thinking and quick decision-making — and I take pride 
+  in my ability to communicate and connect with people across 
+  cultures, being fluent in English, Bengali, Urdu, and Hindi. 
+  These experiences have given me a unique perspective that I bring 
+  into every project and collaboration I am part of.
+          </p>
+          <p style="color:var(--clr-muted); margin-bottom:2rem;">
+            Looking ahead, I aspire to build a career at the forefront of 
+  Artificial Intelligence and software development, contributing to 
+  solutions that are innovative, inclusive, and impactful. I am 
+  particularly excited about the possibilities within cloud computing, 
+  Python automation, and intelligent systems. I am actively seeking 
+  internship and placement opportunities where I can apply what I have 
+  learned, grow within a professional environment, and make a meaningful 
+  contribution. I believe that the best technology is built by curious, 
+  driven, and collaborative people — and that is exactly the kind of 
+  professional I am working every day to become.
+          </p>
+
+          <!-- INTERESTS / TECH TAGS — REPLACE with your own -->
+          <div class="tags-row">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Python</span>
+          </div>
+
+          <!-- SKILLS section -->
+          <p class="section-label" style="margin-top:2.5rem;">Technical Skills</p>
+          <h3 style="font-family:var(--font-display); color:var(--clr-white); margin-bottom:1.5rem; font-size:1.4rem;">What I <em>Know</em></h3>
+
+          <!-- REPLACE skill names and percentages with your own -->
+          <div class="skill-list">
+            <div class="skill-item fade-in">
+              <div class="skill-label"><span>HTML &amp; CSS</span><span>[50%]</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="50%" style="width:0;"></div></div>
+            </div>
+            <div class="skill-item fade-in">
+              <div class="skill-label"><span>JavaScript</span><span>[50%]</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="50%" style="width:0;"></div></div>
+            </div>
+            <div class="skill-item fade-in">
+              <div class="skill-label"><span>Python</span><span>[70%]</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="70%" style="width:0;"></div></div>
+            </div>
+          </div>
+
+          <!-- EDUCATION / EXPERIENCE TIMELINE -->
+          <p class="section-label" style="margin-top:3rem;">Education &amp; Experience</p>
+          <h3 style="font-family:var(--font-display); color:var(--clr-white); margin-bottom:2rem; font-size:1.4rem;">My <em>Journey</em></h3>
+
+          <!-- REPLACE all timeline entries with your own education and experience -->
+          <div class="timeline">
+            <div class="timeline-item fade-in">
+              <p class="timeline-date">[2025] – Present</p>
+              <h4 class="timeline-title">[Computer Science and Artificial Intelligence]</h4>
+              <p class="timeline-sub">[Bangor University] · [Bangor,Wales]</p>
+              <p class="timeline-desc">[I am currently studying BSc Computer Science and Artificial Intelligence 
+  at Bangor University, Wales, covering key modules including Python 
+  Programming, Web Technologies, Database Systems, Computer Architecture, 
+  Mathematics, and Professional Perspectives — building a well-rounded 
+  foundation for a career in modern software development and AI.]</p>
+            </div>
+          </div>
+
+        </div><!-- end right column -->
+      </div>
+    </section>
+
+    <!-- Interests section -->
+    <section class="section" style="border-top:1px solid var(--clr-border);" aria-labelledby="interests-heading">
+      <p class="section-label">Beyond the Screen</p>
+      <h2 class="section-title" id="interests-heading">My <em>Interests</em></h2>
+      <div class="divider"></div>
+      <!-- REPLACE with your own interests — aim for 150+ words across the three cards -->
+      <div class="grid-3">
+  <article class="card fade-in">
+    <span style="font-size:1.5rem; display:block; margin-bottom:0.75rem;">🎮</span>
+    <h3 style="font-family:var(--font-display); color:var(--clr-white); margin-bottom:0.5rem;">Gaming</h3>
+    <p style="color:var(--clr-muted); font-size:0.9rem;">
+      Gaming has always been more than just entertainment for me — it is 
+      a space where strategy, quick thinking, and adaptability are constantly 
+      put to the test. Through gaming, I have developed sharper critical 
+      thinking and faster decision-making skills that I actively apply in 
+      my academic and technical work. It has also introduced me to global 
+      communities, broadening my perspective and reinforcing my passion for 
+      interactive technology.
+    </p>
+  </article>
+
+  <article class="card fade-in">
+    <span style="font-size:1.5rem; display:block; margin-bottom:0.75rem;">🗣️</span>
+    <h3 style="font-family:var(--font-display); color:var(--clr-white); margin-bottom:0.5rem;">Communication</h3>
+    <p style="color:var(--clr-muted); font-size:0.9rem;">
+      I genuinely enjoy engaging with people from all walks of life, and 
+      communication has always come naturally to me. Being fluent in four 
+      languages — English, Bengali, Urdu, and Hindi — has allowed me to 
+      connect with diverse individuals and work effectively within 
+      multicultural teams. I believe strong interpersonal skills are just 
+      as important as technical ability, and I continue to invest in both 
+      equally.
+    </p>
+  </article>
+
+  <article class="card fade-in">
+    <span style="font-size:1.5rem; display:block; margin-bottom:0.75rem;">💻</span>
+    <h3 style="font-family:var(--font-display); color:var(--clr-white); margin-bottom:0.5rem;">Technology & AI</h3>
+    <p style="color:var(--clr-muted); font-size:0.9rem;">
+      Beyond my coursework, I have a genuine personal interest in how 
+      technology is shaping the future — particularly in the fields of 
+      Artificial Intelligence, automation, and cloud computing. I enjoy 
+      keeping up with the latest developments in the tech industry, 
+      experimenting with Python projects, and exploring how intelligent 
+      systems can be designed to solve meaningful, real-world problems.
+    </p>
+  </article>
+</div>
+    </section>
+
+  </main>
+
+  <!-- ======= FOOTER ======= -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-links">
+        <a href="https://github.com/prithvyyy" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter ↗</a>
+      </div>
+      <p>&copy; <span id="footer-year"></span> [Sami Khan Prithvy]. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

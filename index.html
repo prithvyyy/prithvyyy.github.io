@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="[Sami Khan Prithvy] — Computer Science and Artificial Intelligence Student. Explore my portfolio, projects, and get in touch.">
+  <meta name="keywords" content="web developer, portfolio, HTML, CSS, JavaScript, [Sami Khan Prithvy]">
+  <meta name="author" content="[Sami Khan Prithvy]">
+  <!-- Open Graph / Social sharing -->
+  <meta property="og:title" content="[Sami Khan Prithvy] — Portfolio">
+  <meta property="og:description" content="Computer Science and Artificial Intelligence Student based in Wales, UK.">
+  <meta property="og:type" content="website">
+  <title>[Sami Khan Prithvy] — Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Google Fonts loaded via CSS @import -->
+  <style>
+    /* Page-specific: hero entrance animation */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .hero-eyebrow { animation: fadeUp 0.6s ease both; animation-delay: 0.1s; }
+    .hero-title   { animation: fadeUp 0.6s ease both; animation-delay: 0.25s; }
+    .hero-desc    { animation: fadeUp 0.6s ease both; animation-delay: 0.4s; }
+    .hero-actions { animation: fadeUp 0.6s ease both; animation-delay: 0.55s; }
+
+    .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .fade-in.visible { opacity: 1; transform: none; }
+
+    /* Services grid icons */
+    .service-icon {
+      font-size: 1.5rem;
+      margin-bottom: 0.75rem;
+      display: block;
+    }
+    .service-card h3 {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      color: var(--clr-white);
+      margin-bottom: 0.5rem;
+    }
+    .service-card p { color: var(--clr-muted); font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ======= HEADER ======= -->
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo">[Sami<span> </span>Khan<span> </span>Prithvy]</a>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="mobile-nav" aria-label="Mobile navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ======= MAIN ======= -->
+  <main id="main-content">
+
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <p class="hero-eyebrow">Welcome to my portfolio</p>
+          <h1 class="hero-title" id="hero-heading">
+            Hi, I'm<br><em>Sami Khan Prithvy</em>
+          </h1>
+          <p class="hero-desc">
+            <!-- REPLACE WITH YOUR OWN DESCRIPTION (150-250 words recommended across the page) -->
+            A first-year 
+  BSc Computer Science and Artificial Intelligence student at Bangor 
+  University, Wales, UK. With a strong foundation in Python programming, 
+  front-end web development, and Object-Oriented Programming, I am driven 
+  by a passion for technology and innovation. This website showcases my 
+  academic journey, technical skills, and personal projects as I work 
+  towards building a meaningful career in the world of Information 
+  Technology and Artificial Intelligence. Feel free to explore, and do 
+  not hesitate to get in touch.
+          <div class="hero-actions">
+            <a href="about.html" class="btn btn-primary">About Me</a>
+            <a href="contact.html" class="btn btn-outline">Get in Touch</a>
+          </div>
+        </div>
+        <div class="hero-img-wrap">
+          <!-- REPLACE src WITH YOUR OWN PHOTO -->
+          <img src="images/sami.jpg" alt="Portrait of Sami Khan Prithvy" class="hero-img" width="360" height="440">
+          <div class="hero-img-frame" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section aria-label="Key statistics">
+      <div class="section" style="padding-top:2rem; padding-bottom:2rem;">
+        <div class="stats-row">
+          <div class="stat-item fade-in">
+            <div class="stat-num">[1]+</div><!-- REPLACE with your projects count -->
+            <div class="stat-label">Projects</div>
+          </div>
+          <div class="stat-item fade-in">
+            <div class="stat-num">[2]</div><!-- REPLACE with years experience -->
+            <div class="stat-label">Years Learning</div>
+          </div>
+          <div class="stat-item fade-in">
+            <div class="stat-num">[4]+</div><!-- REPLACE with technologies you know -->
+            <div class="stat-label">Technologies</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT I DO -->
+    <section class="section" aria-labelledby="services-heading">
+      <p class="section-label">What I Do</p>
+      <h2 class="section-title" id="services-heading">My <em>Expertise</em></h2>
+      <div class="divider"></div>
+      <p class="section-body" style="margin-bottom:3rem;">
+        <!-- REPLACE with a short overview of your skills/interests (2-3 sentences) -->
+        I am proficient in Python, HTML5, and CSS3, with hands-on experience 
+  in Object-Oriented Programming and Agile methodologies. My interests 
+  span across artificial intelligence, cloud technologies, and full-stack 
+  web development. Outside of academics, I enjoy gaming and communication, 
+  which have sharpened my critical thinking and interpersonal skills.
+      </p>
+      <div class="grid-3">
+        <!-- REPLACE service titles, icons and descriptions with your own skills/services -->
+        <article class="card service-card fade-in">
+          <span class="service-icon">🐍</span>
+          <h3>Python Development</h3>
+          <p>Experienced in writing clean, efficient Python scripts for data 
+    analysis, automation, and object-oriented applications. Comfortable 
+    working with Python libraries and applying programming logic to 
+    solve real-world problems.</p>
+        </article>
+        <article class="card service-card fade-in">
+          <span class="service-icon">💻</span>
+          <h3>Front-End Development</h3>
+          <p>Building performant websites with semantic HTML5, modern CSS, and vanilla JavaScript — no unnecessary dependencies.</p>
+        </article>
+        <article class="card service-card fade-in">
+          <span class="service-icon">🗄️</span>
+  <h3>Database Systems</h3>
+  <p>
+    Knowledgeable in database design and management principles through 
+    academic study, with an understanding of how to structure, query, 
+    and maintain data efficiently in modern software applications.
+  </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECT TEASER -->
+    <section class="section" aria-labelledby="work-heading" style="border-top: 1px solid var(--clr-border);">
+      <p class="section-label">Featured Work</p>
+      <h2 class="section-title" id="work-heading">Recent <em>Projects</em></h2>
+      <div class="divider"></div>
+      <p class="section-body" style="margin-bottom: 2rem;">
+        <!-- REPLACE with your project descriptions - add as many cards as you like -->
+        A selection of projects I've worked on recently. Visit the About page for more details on my background and skills.
+      </p>
+      <div class="grid-2">
+        <!-- PROJECT CARD 1 — REPLACE with your own project details -->
+        <article class="card fade-in">
+          <!-- Optional: add a project screenshot: <img src="images/project-1.jpg" alt="..."> -->
+          <p class="section-label" style="margin-bottom:0.5rem;">[2026]</p>
+          <h3 style="font-family:var(--font-display);color:var(--clr-white);margin-bottom:0.5rem;">[Stock Control System]</h3>
+          <p style="color:var(--clr-muted);font-size:0.9rem;margin-bottom:1rem;">[Developed a fully functional Stock Control System using Python as 
+    part of my first-year coursework at Bangor University. The system 
+    allows users to add, update, remove, and track inventory items 
+    efficiently through a structured command-line interface. Built with 
+    Object-Oriented Programming principles, the project demonstrates 
+    clean code design, data management, and practical problem-solving 
+    skills applied to a real-world business scenario.]</p>
+          <a href="#" class="btn btn-outline" style="font-size:0.8rem; padding:0.5rem 1.25rem;">View Project →</a>
+        </article>
+        <!-- PROJECT CARD 2 — REPLACE -->
+        <article class="card fade-in">
+          <p class="section-label" style="margin-bottom:0.5rem;">[2026]</p>
+          <h3 style="font-family:var(--font-display);color:var(--clr-white);margin-bottom:0.5rem;">[Web Scraper Tool]</h3>
+          <p style="color:var(--clr-muted);font-size:0.9rem;margin-bottom:1rem;">[Created a web scraper using Python and BeautifulSoup to extract data from multiple sources for analysis. The tool automates the process of gathering information, saving time and reducing manual effort.]</p>
+          <a href="#" class="btn btn-outline" style="font-size:0.8rem; padding:0.5rem 1.25rem;">View Project →</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section" style="text-align:center; border-top:1px solid var(--clr-border);" aria-labelledby="cta-heading">
+      <p class="section-label">Let's Connect</p>
+      <h2 class="section-title" id="cta-heading" style="margin:0 auto; max-width:18ch;">Have a project or <em>idea</em> in mind?</h2>
+      <div class="divider" style="margin:1.5rem auto;"></div>
+      <p class="section-body" style="margin:0 auto 2rem;">I'm always open to new collaborations, conversations, and creative challenges.</p>
+      <a href="contact.html" class="btn btn-primary">Start a Conversation</a>
+    </section>
+
+  </main>
+
+  <!-- ======= FOOTER ======= -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-links">
+        <!-- REPLACE with your own social/external links -->
+        <a href="https://github.com/prithvyyy" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter ↗</a>
+      </div>
+      <p>&copy; <span id="footer-year"></span> [Sami Khan Prithvy]. All rights reserved.</p><!-- REPLACE [Sami Khan] -->
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

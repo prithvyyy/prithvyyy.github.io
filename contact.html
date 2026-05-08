@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get in touch with [Sami Khan Prithvy] — web developer and designer.">
+  <meta name="keywords" content="contact, hire, collaborate, [Sami Khan Prithvy]">
+  <meta name="author" content="[Sami Khan Prithvy]">
+  <title>Contact — [Sami Khan Prithvy]</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Page-specific: Contact layout */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.6fr;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    .contact-info-item {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+      padding: 1.25rem 0;
+      border-bottom: 1px solid var(--clr-border);
+    }
+    .contact-info-icon {
+      font-size: 1.2rem;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .contact-info-label {
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--clr-accent);
+      margin-bottom: 0.2rem;
+    }
+    .contact-info-value {
+      color: var(--clr-text);
+      font-size: 0.95rem;
+    }
+    .contact-info-value a { color: var(--clr-text); }
+    .contact-info-value a:hover { color: var(--clr-accent); }
+
+    @media (max-width: 800px) {
+      .contact-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ======= HEADER ======= -->
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo">[Sami<span> </span>Khan <span> </span>Prithvy]</a>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="mobile-nav" aria-label="Mobile navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ======= MAIN ======= -->
+  <main id="main-content">
+
+    <!-- PAGE BANNER -->
+    <div class="page-banner">
+      <p class="section-label">Say Hello</p>
+      <h1 class="page-banner-title">Get in <em style="font-style:italic; color:var(--clr-accent);">Touch</em></h1>
+      <p class="page-banner-sub">
+        <!-- REPLACE with a personal note about how you prefer to be contacted or what kind of enquiries you welcome -->
+        Whether you want to collaborate, have a question, or just want to say hello — I'd love to hear from you.
+      </p>
+    </div>
+
+    <!-- CONTACT SECTION -->
+    <section class="section" aria-labelledby="contact-heading">
+      <div class="contact-grid">
+
+        <!-- LEFT: Contact details -->
+        <aside aria-label="Contact information">
+          <p class="section-label">Contact Details</p>
+          <h2 class="section-title" id="contact-heading" style="font-size:clamp(1.4rem,3vw,2rem);">Let's <em>Talk</em></h2>
+          <div class="divider"></div>
+
+          <p style="color:var(--clr-muted); font-size:0.95rem; margin-bottom:1.5rem;">
+            <!-- REPLACE with a short personal message (2–3 sentences) -->
+            I'm always open to interesting conversations, creative projects, and new opportunities. Feel free to reach out through any of the channels below, or use the form to send me a direct message.
+          </p>
+
+          <!-- REPLACE all values with your own contact details -->
+          <div class="contact-info-item">
+            <span class="contact-info-icon">✉️</span>
+            <div>
+              <p class="contact-info-label">Email</p>
+              <p class="contact-info-value">
+                <!-- REPLACE with your email address -->
+                <a href="mailto:prithvy2016@gmail.com">prithvy2016@gmail.com</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <span class="contact-info-icon">📍</span>
+            <div>
+              <p class="contact-info-label">Location</p>
+              <p class="contact-info-value">
+                Bangor, Wales, United Kingdom
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <span class="contact-info-icon">🎓</span>
+            <div>
+              <p class="contact-info-label">Currently</p>
+              <p class="contact-info-value">
+                Studying Computer Science and Artificial Intelligence at Bangor University, UK.
+              </p>
+            </div>
+          </div>
+
+          <div style="margin-top:2rem; display:flex; flex-direction:column; gap:0.75rem;">
+            <a href="https://github.com/prithvyyy" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="justify-content:center;">GitHub ↗</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="justify-content:center;">LinkedIn ↗</a>
+          </div>
+        </aside>
+
+        <!-- RIGHT: Contact form -->
+        <div>
+          <p class="section-label">Send a Message</p>
+          <h2 style="font-family:var(--font-display); color:var(--clr-white); font-size:clamp(1.4rem,3vw,2rem); margin-bottom:1.5rem;">Contact <em>Form</em></h2>
+
+          <form id="contact-form" novalidate aria-label="Contact form">
+
+            <div class="grid-2" style="gap:1rem;">
+              <div class="form-group">
+                <label for="name">Full Name <span aria-hidden="true" style="color:var(--clr-accent);">*</span></label>
+                <input type="text" id="name" name="name" placeholder="[Your Name]" autocomplete="name" required aria-required="true">
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address <span aria-hidden="true" style="color:var(--clr-accent);">*</span></label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required aria-required="true">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject">
+                <option value="">Select a topic…</option>
+                <option value="collaboration">Collaboration</option>
+                <option value="project">Project Enquiry</option>
+                <option value="feedback">Feedback on my Site</option>
+                <option value="general">General Question</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message <span aria-hidden="true" style="color:var(--clr-accent);">*</span></label>
+              <textarea id="message" name="message" placeholder="Write your message here…" required aria-required="true" rows="6"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center; padding:1rem;">
+              Send Message
+            </button>
+
+            <div id="form-msg" class="form-msg" role="alert" aria-live="polite"></div>
+
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FAQ / Additional info section -->
+    <section class="section" style="border-top:1px solid var(--clr-border);" aria-labelledby="faq-heading">
+      <p class="section-label">Common Questions</p>
+      <h2 class="section-title" id="faq-heading" style="font-size:clamp(1.4rem,3vw,2rem);">FAQ</h2>
+      <div class="divider"></div>
+      <!-- REPLACE with your own FAQ content — 3-5 genuine questions and answers -->
+      <div class="grid-2">
+        <div class="card">
+          <h3 style="font-family:var(--font-display); color:var(--clr-white); margin-bottom:0.5rem; font-size:1.05rem;">[Are you open to internship or placement opportunities?]</h3>
+          <p style="color:var(--clr-muted); font-size:0.9rem;">[Yes, absolutely! I am actively looking for internship and placement 
+      opportunities in software development, web technologies, or AI-related 
+      fields. I am eager to apply my academic knowledge in a real-world 
+      environment and contribute meaningfully to a professional team.]</p>
+        </div>
+        <div class="card">
+          <h3 style="font-family:var(--font-display); color:var(--clr-white); margin-bottom:0.5rem; font-size:1.05rem;">[What kind of projects are you available to collaborate on?]</h3>
+          <p style="color:var(--clr-muted); font-size:0.9rem;">[I am open to collaborating on projects involving Python development, 
+      front-end web development, data analysis, or anything related to 
+      Artificial Intelligence and cloud technologies. Whether it is a 
+      university group project or an independent initiative, I am always 
+      keen to learn and contribute.]</p>
+        </div>
+        <div class="card">
+          <h3 style="font-family:var(--font-display); color:var(--clr-white); margin-bottom:0.5rem; font-size:1.05rem;">[How can I get in touch with you?]</h3>
+          <p style="color:var(--clr-muted); font-size:0.9rem;">[The best way to reach me is via email at 
+      <a href="mailto:prithvy2016@gmail.com">prithvy2016@gmail.com</a>. 
+      I typically respond within 24 to 48 hours. You are also welcome 
+      to connect with me through my LinkedIn or GitHub profiles linked 
+      below.
+      ]</p>
+        </div>
+        <div class="card">
+          <h3 style="font-family:var(--font-display); color:var(--clr-white); margin-bottom:0.5rem; font-size:1.05rem;">[What programming languages and tools do you currently work with?]</h3>
+          <p style="color:var(--clr-muted); font-size:0.9rem;">[I am currently proficient in Python, HTML5, and CSS3, with working 
+      knowledge of Object-Oriented Programming principles and Agile 
+      methodologies. I also have experience using Visual Studio and am 
+      familiar with DevOps principles and cloud-based technologies through 
+      my studies at Bangor University.]</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======= FOOTER ======= -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-links">
+        <a href="https://github.com/prithvyyy" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter ↗</a>
+      </div>
+      <p>&copy; <span id="footer-year"></span> [Sami Khan Prithvy]. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+  <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
