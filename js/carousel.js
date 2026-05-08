@@ -1,7 +1,4 @@
-/* ============================================
-   TASK 5 — INTERACTIVE CAROUSEL FROM JSON
-   TASK 6 — AUTOPLAY + KEYBOARD NAVIGATION
-   ============================================ */
+
 
 document.addEventListener('DOMContentLoaded', () => {
   const track = document.getElementById('carousel-track');
@@ -61,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function updateUI() {
-    // Update pips
+    
     document.querySelectorAll('.pip').forEach((p, i) => {
       p.classList.toggle('active', i === current);
     });
